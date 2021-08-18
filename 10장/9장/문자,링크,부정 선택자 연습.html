@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta set="utf-8">
+        <style>
+            #A::first-letter{
+               font-size: 2em; 
+            }
+            #B::first-line{
+                color:blue;
+            }
+            p:hover{
+                background-color: blue;
+                color: yellow;
+            }
+            .suffing a::after{
+                content:' - ' attr(href);
+            }
+
+            a{
+                color:black;
+            }
+
+            #song li:not(.HappyThings){
+                background-color: tomato;
+            }
+        </style>
+    </head>
+    <body>
+       <h1 id="A">2021년 8월 10일</h1>
+       <br>
+       <br>
+       <br>
+       <h1 id="B">2022년 1월 1일</h1>
+       <p id="C">
+           22년의 날이 밝았다. 나는 행복했다.<br>
+           그래서 배고팠다.
+       </p>
+
+       <br>
+       <br>
+       <br>
+       <ul>
+           <li class="suffing"><a href="google.com">구글</a></li>
+           <li class="suffing"><a href="naver.com">네이버</a></li>
+           <li class="suffing"><a href="daum.net">다음</a></li>
+       </ul>
+
+       <br><br><br>
+       <ul  id="song">
+           <li class="HappyThings">둥근해가 뜨면 제일 먼저</li>
+           <li>기지개를 한번 쭉 펴고~</li>
+           <li class="HappyThings">시간맞춰 버스를 탈 때</li>
+           <li>유난히 사람이 많은 출근 기차 내 앞에서 자리 났을 때</li>
+       </ul>
+    </body>
+</html
